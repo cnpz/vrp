@@ -224,10 +224,10 @@ impl State for SearchState {
         match &self {
             SearchState::BestKnown => 0.,
             SearchState::Diverse => 0.,
-            SearchState::BestMajorImprovement => 1000.,
-            SearchState::BestMinorImprovement => 100.,
-            SearchState::DiverseImprovement => 10.,
-            SearchState::Stagnated => -1.,
+            SearchState::BestMajorImprovement => 1024.,
+            SearchState::BestMinorImprovement => 32.,
+            SearchState::DiverseImprovement => 4.,
+            SearchState::Stagnated => -2.,
         }
     }
 }
